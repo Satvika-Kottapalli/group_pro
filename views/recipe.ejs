@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="recipe-detail">
+            <h2><%= recipe.strMeal %></h2>
+            <img src="<%= recipe.strMealThumb %>" alt="<%= recipe.strMeal %>">
+            <p><strong>Category:</strong> <%= recipe.strCategory %></p>
+            <p><strong>Instructions:</strong> <%= recipe.strInstructions %></p>
+            <a href="/search" class="back-button">Back to Search</a>
+        </div>
+    </div>
+</body>
+</html>

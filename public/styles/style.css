@@ -1,0 +1,170 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+   
+}
+
+body {
+    background-color: #8c8ccf;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color:cornflowerblue;
+}
+
+/* Centering Content */
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px; /* Adjust as needed */
+    width: 50%;
+    text-align: center;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+form label {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Recipe Grid Styling */
+.recipe-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.recipe-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(33.333% - 20px); /* 3 items per row */
+    overflow: hidden;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 150px; /* Adjust size as needed */
+    object-fit: cover;
+}
+
+.recipe-card h3 {
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .recipe-card {
+        width: calc(50% - 20px); /* 2 items per row on medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .recipe-card {
+        width: calc(100% - 20px); /* 1 item per row on small screens */
+    }
+}
+
+
+/* Recipe Detail Page Styling */
+.recipe-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px; /* Adjust as needed */
+    width: 100%;
+    text-align: center;
+    margin: 20px auto; /* Center the container */
+}
+
+.recipe-detail img {
+    width: 100%;
+    max-width: 500px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px;
+}
+
+.recipe-detail h2 {
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+.recipe-detail p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Back Button */
+.back-button {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
